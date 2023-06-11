@@ -128,3 +128,42 @@ h1{
 .selem:hover{
     background-color: var(--change-color);
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .sudokubox{
+        margin-left: 4vw;
+        width: 50vw;
+        height: 54vh;
+    }
+    .elem{
+        height: 6vh;
+        width: 5vw;
+    }
+    .right{
+        margin-left: 8vw;
+        margin-top: 5vh;
+        width: 72vw;
+        height: 45vh;
+    }
+    .selem{
+        color: var(--text-color);
+        width: 8vw;
+        height: 8vh;
+    }
+    .btns{
+        margin-left: 20vw;
+        margin-top: 4vh;
+    }
+    
+    .submitbtn{
+        width: 15vw;
+        height: 5vh;
+    }
+    .resetbtn{
+        width: 15vw;
+        height: 5vh;
+
+    }
+  }
