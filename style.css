@@ -1,0 +1,130 @@
+:root{
+    --bg-color : #002c47 ;
+    --text-color : #fdfdfd ;
+    --fixed-color : #0062ac ;
+    --change-color : #5bbae2 ;
+    --hover-color : #b5d1de ;
+}   
+
+*{
+    animation: slide-up 0.6s ease-in-out   forwards ;
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+h1{
+    color: var(--text-color);
+    margin-left: 45vw;
+    letter-spacing: 0.15vw;
+}
+
+.pagewrap{
+    display: flex;
+}
+
+.sudokubox{
+    margin-left: 20vw;
+    border: 1px solid transparent;
+    background-color: transparent;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 28vw;
+    height: 56vh;
+}
+
+.elem{
+    border: 1px solid var(--fixed-color);
+    background-color: var(--change-color);
+    height: 6vh;
+    width: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.elem:hover{
+    background-color: var(--hover-color);
+    box-shadow: 1px 2px 3px 0px var(--hover-color)   ; 
+}
+
+.btns{
+    margin-left: 25vw;
+    display: flex;
+    padding: 2vh;
+    cursor: pointer;
+    color: var(--bg-color);
+}
+
+.submitbtn{
+    border-radius: 10px;
+    width: 7vw;
+    height: 5vh;
+    text-align: center;
+    background-color: var(--change-color);
+}
+.resetbtn{
+    margin-left: 1vw;
+    border-radius: 10px;
+    width: 7vw;
+    height: 5vh;
+    text-align: center;
+    background-color: var(--change-color);
+}
+
+.submitbtn:hover,.resetbtn:hover{
+    background-color: var(--fixed-color);
+}
+
+
+.right{
+    margin-left: 5vw;
+    margin-top: 5vh;
+    width: 25vw;
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+.selem{
+    color: var(--text-color);
+    width: 7vw;
+    height: 12vh;
+    border-radius: 10px;
+    background-color: var(--fixed-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selem:hover{
+    background-color: var(--change-color);
+}
