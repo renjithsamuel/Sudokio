@@ -138,7 +138,7 @@
                 elem.setAttribute('class','elem');
                 elem.innerHTML = board[i][j].val;
                 if(board[i][j].fixed==true){
-                    elem.style.backgroundColor = 'rgba(66, 158, 243, 0.653)'
+                    elem.style.backgroundColor = 'var(--border-color)'
                 }
                 sudoku.append(elem);
             }

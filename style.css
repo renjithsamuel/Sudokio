@@ -2,6 +2,7 @@
     --bg-color : #002c47 ;
     --text-color : #fdfdfd ;
     --fixed-color : #0062ac ;
+    --border-color : rgba(66, 158, 243, 0.653) ;
     --change-color : #5bbae2 ;
     --hover-color : #b5d1de ;
 }   
@@ -83,6 +84,7 @@ h1{
 }
 
 .submitbtn{
+    padding-top: 0.5vh;
     border-radius: 10px;
     width: 7vw;
     height: 5vh;
@@ -90,6 +92,7 @@ h1{
     background-color: var(--change-color);
 }
 .resetbtn{
+    padding-top: 0.5vh;
     margin-left: 1vw;
     border-radius: 10px;
     width: 7vw;
@@ -130,22 +133,28 @@ h1{
 }
 
 
-@media only screen and (max-width: 600px) {
-
+@media only screen and (max-width: 900px) {
+    .pagewrap{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        margin-left: 35vw;
+    }
     .sudokubox{
-        margin-left: 4vw;
-        width: 50vw;
-        height: 54vh;
+        margin-left: 7vw;
+        width: 75vw;
+        height: 50vh;
     }
     .elem{
-        height: 6vh;
-        width: 5vw;
+        height: 5.55vh;
+        width: 7.78vw;
     }
     .right{
-        margin-left: 8vw;
-        margin-top: 5vh;
-        width: 72vw;
-        height: 45vh;
+        margin-left: 2vw;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: fit-content;
     }
     .selem{
         color: var(--text-color);
@@ -158,11 +167,12 @@ h1{
     }
     
     .submitbtn{
-        width: 15vw;
+        padding-top: 0.5vh;
+        width: 20vw;
         height: 5vh;
     }
     .resetbtn{
-        width: 15vw;
+        width: 20vw;
         height: 5vh;
 
     }
